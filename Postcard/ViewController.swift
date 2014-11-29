@@ -34,7 +34,7 @@ class ViewController: UIViewController {
         messageLabel.text = enterNameText.text + ", you sent the message!";
         messageLabel.textColor = UIColor.redColor();
         sender.enabled = false;
-        sendBtn.setTitle("Mail sent", forState: UIControlState.Normal)
+        sendBtn.setTitle("Mail sent!", forState: UIControlState.Normal)
         enterNameText.enabled = false;
         enterMessageText.enabled = false;
         enterMessageText.resignFirstResponder();
