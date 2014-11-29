@@ -106,6 +106,15 @@
                                     <rect key="frame" x="16" y="227" width="324" height="30"/>
                                 </variation>
                             </textField>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OaK-43-hrT">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="139" width="228" height="42"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
@@ -115,6 +124,7 @@
                                 <exclude reference="Ohp-2g-i5P"/>
                                 <exclude reference="kmX-nt-7TN"/>
                                 <exclude reference="bMi-8v-3Lo"/>
+                                <exclude reference="OaK-43-hrT"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -124,12 +134,14 @@
                                 <include reference="Ohp-2g-i5P"/>
                                 <include reference="kmX-nt-7TN"/>
                                 <include reference="bMi-8v-3Lo"/>
+                                <include reference="OaK-43-hrT"/>
                             </mask>
                         </variation>
                     </view>
                     <connections>
                         <outlet property="enterMessageText" destination="vWV-Wc-C9M" id="TGa-Pf-rdb"/>
                         <outlet property="enterNameText" destination="bMi-8v-3Lo" id="SwK-CC-mpS"/>
+                        <outlet property="labelMessage" destination="OaK-43-hrT" id="pwY-mD-fUD"/>
                         <outlet property="messageLabel" destination="kmX-nt-7TN" id="Owa-ie-8N7"/>
                         <outlet property="sendBtn" destination="Ohp-2g-i5P" id="9Xd-8w-bpl"/>
                     </connections>

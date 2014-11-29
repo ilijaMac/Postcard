@@ -16,6 +16,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var enterNameText: UITextField!
     @IBOutlet weak var enterMessageText: UITextField!
     @IBOutlet weak var sendBtn: UIButton!
+    @IBOutlet weak var labelMessage: UILabel!
     
     
     
@@ -38,6 +39,12 @@ class ViewController: UIViewController {
         enterNameText.enabled = false;
         enterMessageText.enabled = false;
         enterMessageText.resignFirstResponder();
+        labelMessage.text = enterMessageText.text;
+        labelMessage.hidden = false;
+        labelMessage.textColor = UIColor.blueColor();
+        enterNameText.resignFirstResponder();
+    
+    
     }
 
 }
